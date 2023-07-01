@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Drum Machine - 626 Creative Studio</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- <nav>
@@ -11,132 +12,149 @@
         <img src="/logo-removebg-preview.png" alt="" />
       </div>
     </nav> -->
-    <nav>
-      <div class="menu-icon">
-        <i class="fa fa-bars fa-2x"></i>
-      </div>
-      <div class="logo">
-        <img src="/logo-removebg-preview.png" alt="" />
-      </div>
-      <div class="menu">
-        <ul>
-          <!-- <li><a href="#">Home</a></li>
+    <div class="overlay">
+      <nav>
+        <div class="menu-icon">
+          <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="logo">
+          <img src="/logo-removebg-preview.png" alt="" />
+        </div>
+        <div class="menu">
+          <ul>
+            <!-- <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Tools</a></li> -->
-          <li class="contact"><a href="#">Contact</a></li>
-        </ul>
+            <li class="contact"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="here">
+        <div class="hero-header">
+          <h1>Drum Machine</h1>
+          <h3>
+            Introducing the Drum Machine: Unleash Your Rhythmic Creativity!
+          </h3>
+        </div>
+        <div data-aos="fade-right" class="hero">
+          <p>
+            Welcome to the world of digital synthesis with the Drum Machine, a
+            powerful tool by 626 Creative Studio. Experience the joy of playing
+            drums with just your keyboard. Transform keystrokes into captivating
+            beats and explore a variety of drum sounds and patterns.
+          </p>
+          <p>
+            Immerse yourself in endless musical possibilities with our
+            meticulously crafted drum machine. From crisp snares to thunderous
+            kicks, each sound is designed to elevate your music spirit.
+          </p>
+          <p>
+            Unleash your rhythmic creativity today and embark on a musical
+            journey like no other. Make some noise, groove to your own beat, and
+            become a master of percussion in the digital realm. Let the rhythm
+            take control with the Drum Machine by
+            <span
+              ><strong><em>626 Creative Studio</em></strong></span
+            >.
+          </p>
+        </div>
       </div>
-    </nav>
-    <div class="here">
-      <h1>Drum Machine</h1>
-      <h3>Introducing the Drum Machine: Unleash Your Rhythmic Creativity!</h3>
-      <p>
-        Welcome to the world of digital synthesis with the Drum Machine, a
-        powerful tool by 626 Creative Studio. Experience the joy of playing
-        drums with just your keyboard. Transform keystrokes into captivating
-        beats and explore a variety of drum sounds and patterns.
-      </p>
-      <p>
-        Immerse yourself in endless musical possibilities with our meticulously
-        crafted drum kits. From crisp snares to thunderous kicks, each sound is
-        designed to elevate your music production.
-      </p>
-      <p>
-        Unleash your rhythmic creativity today and embark on a musical journey
-        like no other. Make some noise, groove to your own beat, and become a
-        master of percussion in the digital realm. Let the rhythm take control
-        with the Drum Machine by 626 Creative Studio.
-      </p>
-    </div>
-    <div class="keys">
-      <div data-key="65" class="key">
-        <kbd>A</kbd>
-        <span class="sound">clap</span>
+      <div class="keys">
+        <div data-key="65" class="key">
+          <kbd>A</kbd>
+          <span class="sound">clap</span>
+        </div>
+        <div data-key="83" class="key">
+          <kbd>S</kbd>
+          <span class="sound">hihat</span>
+        </div>
+        <div data-key="68" class="key">
+          <kbd>D</kbd>
+          <span class="sound">kick</span>
+        </div>
+        <div data-key="70" class="key">
+          <kbd>F</kbd>
+          <span class="sound">openhat</span>
+        </div>
+        <div data-key="71" class="key">
+          <kbd>G</kbd>
+          <span class="sound">boom</span>
+        </div>
+        <div data-key="72" class="key">
+          <kbd>H</kbd>
+          <span class="sound">ride</span>
+        </div>
+        <div data-key="74" class="key">
+          <kbd>J</kbd>
+          <span class="sound">snare</span>
+        </div>
+        <div data-key="75" class="key">
+          <kbd>K</kbd>
+          <span class="sound">tom</span>
+        </div>
+        <div data-key="76" class="key">
+          <kbd>L</kbd>
+          <span class="sound">clav</span>
+        </div>
       </div>
-      <div data-key="83" class="key">
-        <kbd>S</kbd>
-        <span class="sound">hihat</span>
-      </div>
-      <div data-key="68" class="key">
-        <kbd>D</kbd>
-        <span class="sound">kick</span>
-      </div>
-      <div data-key="70" class="key">
-        <kbd>F</kbd>
-        <span class="sound">openhat</span>
-      </div>
-      <div data-key="71" class="key">
-        <kbd>G</kbd>
-        <span class="sound">boom</span>
-      </div>
-      <div data-key="72" class="key">
-        <kbd>H</kbd>
-        <span class="sound">ride</span>
-      </div>
-      <div data-key="74" class="key">
-        <kbd>J</kbd>
-        <span class="sound">snare</span>
-      </div>
-      <div data-key="75" class="key">
-        <kbd>K</kbd>
-        <span class="sound">tom</span>
-      </div>
-      <div data-key="76" class="key">
-        <kbd>L</kbd>
-        <span class="sound">clav</span>
-      </div>
-    </div>
 
-    <audio data-key="65" src="sounds/clap.wav"></audio>
-    <audio data-key="83" src="sounds/hihat.wav"></audio>
-    <audio data-key="68" src="sounds/kick.wav"></audio>
-    <audio data-key="70" src="sounds/openhat.wav"></audio>
-    <audio data-key="71" src="sounds/boom.wav"></audio>
-    <audio data-key="72" src="sounds/ride.wav"></audio>
-    <audio data-key="74" src="sounds/snare.wav"></audio>
-    <audio data-key="75" src="sounds/tom.wav"></audio>
-    <audio data-key="76" src="sounds/tink.wav"></audio>
+      <audio data-key="65" src="sounds/clap.wav"></audio>
+      <audio data-key="83" src="sounds/hihat.wav"></audio>
+      <audio data-key="68" src="sounds/kick.wav"></audio>
+      <audio data-key="70" src="sounds/openhat.wav"></audio>
+      <audio data-key="71" src="sounds/boom.wav"></audio>
+      <audio data-key="72" src="sounds/ride.wav"></audio>
+      <audio data-key="74" src="sounds/snare.wav"></audio>
+      <audio data-key="75" src="sounds/tom.wav"></audio>
+      <audio data-key="76" src="sounds/tink.wav"></audio>
 
-    <script>
-      // //Menu toggle-button for small screens
-      // $(document).ready(function () {
-      //   $(".menu-icon").on("click", function () {
-      //     $("nav ul").toggleClass("showing");
-      //   });
-      // });
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-      // //Scrolling Effect for nav
-      // $(window).on("scroll", function () {
-      //   if ($(window).scrollTop()) {
-      //     $("nav").addClass("black");
-      //   } else {
-      //     $("nav").removeClass("black");
-      //   }
-      // });
+      <script>
+        // Init Animation on scroll
+        AOS.init();
+        // //Menu toggle-button for small screens
+        // $(document).ready(function () {
+        //   $(".menu-icon").on("click", function () {
+        //     $("nav ul").toggleClass("showing");
+        //   });
+        // });
 
-      function playSound(e) {
-        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-        if (!audio) return;
+        // //Scrolling Effect for nav
+        // $(window).on("scroll", function () {
+        //   if ($(window).scrollTop()) {
+        //     $("nav").addClass("black");
+        //   } else {
+        //     $("nav").removeClass("black");
+        //   }
+        // });
 
-        audio.currentTime = 0;
-        audio.play();
-        key.classList.add("playing");
-      }
+        function playSound(e) {
+          const audio = document.querySelector(
+            `audio[data-key="${e.keyCode}"]`
+          );
+          const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+          if (!audio) return;
 
-      function removeTransition(e) {
-        if (e.propertyName != "transform") {
-          return;
+          audio.currentTime = 0;
+          audio.play();
+          key.classList.add("playing");
         }
 
-        this.classList.remove("playing");
-      }
+        function removeTransition(e) {
+          if (e.propertyName != "transform") {
+            return;
+          }
 
-      const keys = document.querySelectorAll(".key");
-      keys.forEach((key) =>
-        key.addEventListener("transitionend", removeTransition)
-      );
-      window.addEventListener("keydown", playSound);
-    </script>
+          this.classList.remove("playing");
+        }
+
+        const keys = document.querySelectorAll(".key");
+        keys.forEach((key) =>
+          key.addEventListener("transitionend", removeTransition)
+        );
+        window.addEventListener("keydown", playSound);
+      </script>
+    </div>
   </body>
 </html>
